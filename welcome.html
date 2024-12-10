@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to QuizElevate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/welcome.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Zk1dJLaAeC_3nRMMLPD8VKaWz_TYYmG1DQ&s" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Zk1dJLaAeC_3nRMMLPD8VKaWz_TYYmG1DQ&s" alt="Logo">
+            QuizElevate
+        </a>
+        <div class="navbar-links">
+            <a href="{{ url_for('welcome') }}">Welcome</a>
+            <a href="{{ url_for('index') }}">Home</a>
+
+        </div>
+    </div>
+    <div class="welcome-container">
+        <div class="welcome-text">
+            <h1>Welcome to QuizElevate</h1>
+            <p>Dive into a new era of studying with QuizElevate, the innovative platform that transforms your documents into multiple-choice questions. Upload your documents and let us create dynamic multiple-choice questions to supercharge your learning. Let’s get started!</p>
+            <a href="{{ url_for('index') }}" class="btn">Start Now</a>
+        </div>
+        <div class="welcome-image">
+            <img src="https://static.vecteezy.com/system/resources/previews/002/153/023/non_2x/student-studying-science-concept-free-vector.jpg" alt="Professional Study Image">
+        </div>
+    </div>
+</body>
+</html>
